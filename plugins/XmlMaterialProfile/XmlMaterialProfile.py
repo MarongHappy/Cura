@@ -590,15 +590,13 @@ class XmlMaterialProfile(InstanceContainer):
                         if buildplate_id is None:
                             continue
 
-                        variant_containers = ContainerRegistry.getInstance().findInstanceContainersMetadata(
-                            id = buildplate_id)
-                        if not variant_containers:
-                            # It is not really properly defined what "ID" is so also search for variants by name.
-                            variant_containers = ContainerRegistry.getInstance().findInstanceContainersMetadata(
-                                definition = machine_id, name = buildplate_id)
-
-                        if not variant_containers:
+                        from cura.Machines.VariantManager import VariantType
+                        variant_manager = CuraApplication.getInstance().getVariantManager()
+                        variant_metadata = variant_manager.getVariantMetadata(machine_id, VariantType.BUILD_PLATE, buildplate_id)
+                        if not variant_metadata:
                             continue
+
+                        # TODO: check if build plate variant exists
 
                         buildplate_compatibility = machine_compatibility
                         buildplate_recommended = machine_compatibility
@@ -622,12 +620,10 @@ class XmlMaterialProfile(InstanceContainer):
                         if hotend_id is None:
                             continue
 
-                        variant_containers = ContainerRegistry.getInstance().findInstanceContainersMetadata(id = hotend_id)
-                        if not variant_containers:
-                            # It is not really properly defined what "ID" is so also search for variants by name.
-                            variant_containers = ContainerRegistry.getInstance().findInstanceContainersMetadata(definition = machine_id, name = hotend_id)
-
-                        if not variant_containers:
+                        from cura.Machines.VariantManager import VariantType
+                        variant_manager = CuraApplication.getInstance().getVariantManager()
+                        variant_metadata = variant_manager.getVariantMetadata(machine_id, VariantType.NOZZLE, hotend_id)
+                        if not variant_metadata:
                             continue
 
                         hotend_compatibility = machine_compatibility
@@ -656,7 +652,7 @@ class XmlMaterialProfile(InstanceContainer):
                         new_hotend_material.setMetaData(copy.deepcopy(self.getMetaData()))
                         new_hotend_material.getMetaData()["id"] = new_hotend_id
                         new_hotend_material.getMetaData()["name"] = self.getName()
-                        new_hotend_material.getMetaData()["variant"] = variant_containers[0]["id"]
+                        new_hotend_material.getMetaData()["variant"] = variant_metadata["id"]
                         new_hotend_material.setDefinition(machine_id)
                         # Don't use setMetadata, as that overrides it for all materials with same base file
                         new_hotend_material.getMetaData()["compatible"] = hotend_compatibility
