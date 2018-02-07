@@ -727,6 +727,10 @@ class CuraApplication(QtApplication):
         container_registry = ContainerRegistry.getInstance()
         self._variant_manager.initialize()
 
+        from cura.Machines.MaterialManager import MaterialManager
+        self._material_manager = MaterialManager(container_registry)
+        self._material_manager.initialize()
+
         # Check if we should run as single instance or not
         self._setUpSingleInstanceServer()
 
