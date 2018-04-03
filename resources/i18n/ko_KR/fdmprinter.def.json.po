@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Cura 3.2\n"
+"Project-Id-Version: Cura 3.3\n"
 "Report-Msgid-Bugs-To: r.dulek@ultimaker.com\n"
 "POT-Creation-Date: 2017-08-02 16:53+0000\n"
-"PO-Revision-Date: 2018-04-03 19:25+0900\n"
+"PO-Revision-Date: 2018-04-03 19:44+0900\n"
 "Last-Translator: 마롱행복 <daemul72@gmail.com>\n"
 "Language-Team: (MarongHappy <daemul72@gmail.com> - http://blog.naver.com/"
 "eulsoon0\n"
@@ -443,7 +443,7 @@ msgstr "3D프린터 헤드 다각형"
 #: fdmprinter.def.json
 msgctxt "machine_head_polygon description"
 msgid "A 2D silhouette of the print head (fan caps excluded)."
-msgstr "프린터 헤드의 2D 형태 (팬 캡 제외)."
+msgstr "프린터 헤드의 2D 형태 (팬 뚜껑 제외)."
 
 #: fdmprinter.def.json
 msgctxt "machine_head_with_fans_polygon label"
@@ -571,8 +571,11 @@ msgid "Maximum Acceleration X"
 msgstr "X 최대 가속도"
 
 #: fdmprinter.def.json
+#, fuzzy
+#| msgctxt "machine_max_acceleration_x description"
+#| msgid "Maximum acceleration for the motor of the X-direction."
 msgctxt "machine_max_acceleration_x description"
-msgid "Maximum acceleration for the motor of the X-direction."
+msgid "Maximum acceleration for the motor of the X-direction"
 msgstr "X 방향 모터의 최대 가속도."
 
 #: fdmprinter.def.json
@@ -618,32 +621,32 @@ msgstr "프린터 헤드 이동의 기본 가속도."
 #: fdmprinter.def.json
 msgctxt "machine_max_jerk_xy label"
 msgid "Default X-Y Jerk"
-msgstr "기본 X-Y 저크(Jerk)"
+msgstr "기본 X-Y 저크"
 
 #: fdmprinter.def.json
 msgctxt "machine_max_jerk_xy description"
 msgid "Default jerk for movement in the horizontal plane."
-msgstr "수평면에서의 이동을 위한 기본 저크(Jerk)."
+msgstr "수평면에서의 이동을 위한 기본 저크."
 
 #: fdmprinter.def.json
 msgctxt "machine_max_jerk_z label"
 msgid "Default Z Jerk"
-msgstr "기본 Z 저크(Jerk)"
+msgstr "기본 Z 저크"
 
 #: fdmprinter.def.json
 msgctxt "machine_max_jerk_z description"
 msgid "Default jerk for the motor of the Z-direction."
-msgstr "Z 방향 모터의 기본 저크(Jerk)."
+msgstr "Z 방향 모터의 기본 저크."
 
 #: fdmprinter.def.json
 msgctxt "machine_max_jerk_e label"
 msgid "Default Filament Jerk"
-msgstr "기본 필라멘트 저크(Jerk)"
+msgstr "기본 필라멘트 저크"
 
 #: fdmprinter.def.json
 msgctxt "machine_max_jerk_e description"
 msgid "Default jerk for the motor of the filament."
-msgstr "필라멘트 모터의 기본 저크(Jerk)."
+msgstr "필라멘트 모터의 기본 저크."
 
 #: fdmprinter.def.json
 msgctxt "machine_minimum_feedrate label"
@@ -672,7 +675,7 @@ msgstr ""
 #: fdmprinter.def.json
 msgctxt "layer_height label"
 msgid "Layer Height"
-msgstr "층(Layer) 높이"
+msgstr "레이어 높이"
 
 #: fdmprinter.def.json
 msgctxt "layer_height description"
@@ -680,13 +683,13 @@ msgid ""
 "The height of each layer in mm. Higher values produce faster prints in lower "
 "resolution, lower values produce slower prints in higher resolution."
 msgstr ""
-"각 층(Layer)의 높이(mm). 값이 높을수록 해상도가 낮고 인쇄 속도가 빨라지며, 값"
-"이 낮을수록 해상도가 높고 인쇄 속도가 느려집니다."
+"각 레이어의 높이(mm). 값이 높을수록 해상도가 낮고 인쇄 속도가 빨라지며, 값이 "
+"낮을수록 해상도가 높고 인쇄 속도가 느려집니다."
 
 #: fdmprinter.def.json
 msgctxt "layer_height_0 label"
 msgid "Initial Layer Height"
-msgstr "최초 층(Layer) 높이"
+msgstr "최초 레이어 높이"
 
 #: fdmprinter.def.json
 msgctxt "layer_height_0 description"
@@ -694,7 +697,7 @@ msgid ""
 "The height of the initial layer in mm. A thicker initial layer makes "
 "adhesion to the build plate easier."
 msgstr ""
-"최초 층(Layer)의 높이 (mm). 두꺼운 최초 층(Layer)은 빌드판에 쉽게 접착합니다."
+"최초 레이어의 높이 (mm). 두꺼운 최초 레이어은 빌드판에 쉽게 접착합니다."
 
 #: fdmprinter.def.json
 msgctxt "line_width label"
@@ -829,7 +832,7 @@ msgstr "프라임 타워 선 하나의 두께."
 #: fdmprinter.def.json
 msgctxt "initial_layer_line_width_factor label"
 msgid "Initial Layer Line Width"
-msgstr "최초 층(Layer) 선 두께"
+msgstr "최초 레이어 선 두께"
 
 #: fdmprinter.def.json
 msgctxt "initial_layer_line_width_factor description"
@@ -837,8 +840,8 @@ msgid ""
 "Multiplier of the line width on the first layer. Increasing this could "
 "improve bed adhesion."
 msgstr ""
-"첫 번째 층(Layer)의 선 두께 배율. 이 값을 높이면 베드 접착력을 향상시킬 수 있"
-"습니다."
+"첫 번째 레이어의 선 두께 배율. 이 값을 높이면 베드 접착력을 향상시킬 수 있습"
+"니다."
 
 #: fdmprinter.def.json
 msgctxt "shell label"
@@ -933,13 +936,13 @@ msgid ""
 "The extruder train used for printing the top most skin. This is used in "
 "multi-extrusion."
 msgstr ""
-"압출기 트레인은 최상 층(Layer)의 스킨을 인쇄하는데 사용됩니다. 이것은 다중 압"
-"출에 사용됩니다."
+"압출기 트레인은 최상 레이어의 스킨을 인쇄하는데 사용됩니다. 이것은 다중 압출"
+"에 사용됩니다."
 
 #: fdmprinter.def.json
 msgctxt "roofing_layer_count label"
 msgid "Top Surface Skin Layers"
-msgstr "상단 표면 스킨 층(Layer)"
+msgstr "상단 표면 스킨 레이어"
 
 #: fdmprinter.def.json
 msgctxt "roofing_layer_count description"
@@ -947,8 +950,8 @@ msgid ""
 "The number of top most skin layers. Usually only one top most layer is "
 "sufficient to generate higher quality top surfaces."
 msgstr ""
-"최상 층(Layer)의 스킨 층(Layer)의 수. 일반적으로 고품질 맨 위 표면을 생성하는"
-"데 최상단 층(Layer) 하나만 있으면 충분합니다."
+"최상 레이어의 스킨 레이어의 수. 일반적으로 고품질 맨 위 표면을 생성하는데 최"
+"상단 레이어 하나만 있으면 충분합니다."
 
 #: fdmprinter.def.json
 msgctxt "top_bottom_extruder_nr label"
@@ -975,8 +978,8 @@ msgid ""
 "The thickness of the top/bottom layers in the print. This value divided by "
 "the layer height defines the number of top/bottom layers."
 msgstr ""
-"출력물의 상단 / 하단 층(Layer)의 두께. 이 값을 층(Layer) 높이로 나눈 값은 상"
-"단 / 하단 층(Layer)의 수를 정의합니다."
+"출력물의 상단 / 하단 레이어의 두께. 이 값을 레이어 높이로 나눈 값은 상단 / 하"
+"단 레이어의 수를 정의합니다."
 
 #: fdmprinter.def.json
 msgctxt "top_thickness label"
@@ -989,13 +992,13 @@ msgid ""
 "The thickness of the top layers in the print. This value divided by the "
 "layer height defines the number of top layers."
 msgstr ""
-"출력물의 상단 층(Layer)의 두께. 이 값을 층(Layer) 높이로 나눈 값은 최상단 층"
-"(Layer) 수를 정의합니다."
+"출력물의 상단 레이어의 두께. 이 값을 레이어 높이로 나눈 값은 최상단 레이어 수"
+"를 정의합니다."
 
 #: fdmprinter.def.json
 msgctxt "top_layers label"
 msgid "Top Layers"
-msgstr "상단 층(Layer)"
+msgstr "상단 레이어"
 
 #: fdmprinter.def.json
 msgctxt "top_layers description"
@@ -1003,8 +1006,8 @@ msgid ""
 "The number of top layers. When calculated by the top thickness, this value "
 "is rounded to a whole number."
 msgstr ""
-"출력물의 상단 층(Layer)의 두께. 이 값과 층(Layer) 값을 최상단 층(Layer)으로 "
-"정의합니다."
+"출력물의 상단 레이어의 두께. 이 값과 레이어 값을 최상단 레이어으로 정의합니"
+"다."
 
 #: fdmprinter.def.json
 msgctxt "bottom_thickness label"
@@ -1017,21 +1020,20 @@ msgid ""
 "The thickness of the bottom layers in the print. This value divided by the "
 "layer height defines the number of bottom layers."
 msgstr ""
-"출력물의 하단 층(Layer)의 간격. 이 값을 층(Layer) 높이로 나눈 값은 맨 아래 층"
-"(Layer)의 수를 정의합니다."
+"출력물의 하단 레이어의 간격. 이 값을 레이어 높이로 나눈 값은 맨 아래 레이어"
+"의 수를 정의합니다."
 
 #: fdmprinter.def.json
 msgctxt "bottom_layers label"
 msgid "Bottom Layers"
-msgstr "하단 층(Layer)"
+msgstr "하단 레이어"
 
 #: fdmprinter.def.json
 msgctxt "bottom_layers description"
 msgid ""
 "The number of bottom layers. When calculated by the bottom thickness, this "
 "value is rounded to a whole number."
-msgstr ""
-"하단 층(Layer)의 수. 하단 간격으로 계산할 때 이 값은 정수로 반올림됩니다."
+msgstr "하단 레이어의 수. 하단 간격으로 계산할 때 이 값은 정수로 반올림됩니다."
 
 #: fdmprinter.def.json
 msgctxt "top_bottom_pattern label"
@@ -1041,7 +1043,7 @@ msgstr "상단 / 하단 패턴"
 #: fdmprinter.def.json
 msgctxt "top_bottom_pattern description"
 msgid "The pattern of the top/bottom layers."
-msgstr "상단 / 하단 층(Layer)의 패턴."
+msgstr "상단 / 하단 레이어의 패턴."
 
 #: fdmprinter.def.json
 msgctxt "top_bottom_pattern option lines"
@@ -1061,12 +1063,12 @@ msgstr "지그재그"
 #: fdmprinter.def.json
 msgctxt "top_bottom_pattern_0 label"
 msgid "Bottom Pattern Initial Layer"
-msgstr "최초 층(Layer) 하단 패턴"
+msgstr "최초 레이어 하단 패턴"
 
 #: fdmprinter.def.json
 msgctxt "top_bottom_pattern_0 description"
 msgid "The pattern on the bottom of the print on the first layer."
-msgstr "첫 번째 층(Layer)의 인쇄시 하단에 있는 패턴."
+msgstr "첫 번째 레이어의 인쇄시 하단에 있는 패턴."
 
 #: fdmprinter.def.json
 msgctxt "top_bottom_pattern_0 option lines"
@@ -1098,11 +1100,11 @@ msgid ""
 "list is contained in square brackets. Default is an empty list which means "
 "use the traditional default angles (45 and 135 degrees)."
 msgstr ""
-"상단 / 하단 층(Layer)이 선 또는 지그재그 패턴을 사용할 때 사용할 정수선 방향 "
-"목록. 목록의 요소는 층(Layer)이 진행됨에 따라 순차적으로 사용되며 목록의 끝"
-"에 도달하면 최초부터 다시 시작됩니다. 목록 항목은 쉼표로 구분되며 전체 목록"
-"은 대괄호 안에 들어 있습니다. 기본값은 전통적인 기본 각도 (45도 및 135도)를 "
-"사용하는 빈 목록."
+"상단 / 하단 레이어이 선 또는 지그재그 패턴을 사용할 때 사용할 정수선 방향 목"
+"록. 목록의 요소는 레이어이 진행됨에 따라 순차적으로 사용되며 목록의 끝에 도달"
+"하면 최초부터 다시 시작됩니다. 목록 항목은 쉼표로 구분되며 전체 목록은 대괄"
+"호 안에 들어 있습니다. 기본값은 전통적인 기본 각도 (45도 및 135도)를 사용하"
+"는 빈 목록."
 
 #: fdmprinter.def.json
 msgctxt "wall_0_inset label"
@@ -1165,8 +1167,8 @@ msgid ""
 "Prints an extra wall at every other layer. This way infill gets caught "
 "between these extra walls, resulting in stronger prints."
 msgstr ""
-"다른 모든 층(Layer)마다 추가벽을 인쇄합니다. 이런 방식으로 충전물이이 여분의 "
-"벽 사이에 끼어 들게됩면, 더 강하게 인쇄됩니다."
+"다른 모든 레이어마다 추가벽을 인쇄합니다. 이런 방식으로 충전물이이 여분의 벽 "
+"사이에 끼어 들게됩면, 더 강하게 인쇄됩니다."
 
 #: fdmprinter.def.json
 msgctxt "travel_compensate_overlapping_walls_enabled label"
@@ -1258,13 +1260,13 @@ msgid ""
 "compensate for too big holes; negative values can compensate for too small "
 "holes."
 msgstr ""
-"각 층(Layer)의 모든 다각형에 적용된 오프셋의 크기. 양수 값은 너무 큰 구멍을 "
-"보정 할 수있습니다. 음수값은 아주 작은 구멍을 보정할 수 있습니다."
+"각 레이어의 모든 다각형에 적용된 오프셋의 크기. 양수 값은 너무 큰 구멍을 보"
+"정 할 수있습니다. 음수값은 아주 작은 구멍을 보정할 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "xy_offset_layer_0 label"
 msgid "Initial Layer Horizontal Expansion"
-msgstr "최초 층(Layer) 수평 전개"
+msgstr "최초 레이어 수평 전개"
 
 #: fdmprinter.def.json
 msgctxt "xy_offset_layer_0 description"
@@ -1273,8 +1275,8 @@ msgid ""
 "value can compensate for squishing of the first layer known as \"elephant's "
 "foot\"."
 msgstr ""
-"첫 번째 층(Layer)의 모든 다각형에 적용되는 오프셋의 양. 음수값은 \"코끼리의 "
-"발\"이라고 알려진 첫번째 층(Layer)의 뭉그러짐을 보정할 수 있습니다."
+"첫 번째 레이어의 모든 다각형에 적용되는 오프셋의 양. 음수값은 \"코끼리의 발"
+"\"이라고 알려진 첫번째 레이어의 뭉그러짐을 보정할 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "z_seam_type label"
@@ -1290,11 +1292,11 @@ msgid ""
 "placed randomly the inaccuracies at the paths' start will be less "
 "noticeable. When taking the shortest path the print will be quicker."
 msgstr ""
-"층(Layer)에서 각 경로의 시작점입니다. 연속된 층(Layer)의 경로가 같은 지점에"
-"서 시작하는 경우, 인쇄물에 수직 이음선이 표시될 수 있습니다. 사용자 지정 위"
-"치 근처에서 이들을. 정렬할때 이음선을 제거하는 것이 가장 쉽습니다. 무작위로 "
-"배치 할 때 경로 시작시 부정확성은 눈에 띄지 않습니다. 최단 경로를 취할 때 인"
-"쇄가 빨라집니다."
+"레이어에서 각 경로의 시작점입니다. 연속된 레이어의 경로가 같은 지점에서 시작"
+"하는 경우, 인쇄물에 수직 이음선이 표시될 수 있습니다. 사용자 지정 위치 근처에"
+"서 이들을. 정렬할때 이음선을 제거하는 것이 가장 쉽습니다. 무작위로 배치 할 "
+"때 경로 시작시 부정확성은 눈에 띄지 않습니다. 최단 경로를 취할 때 인쇄가 빨라"
+"집니다."
 
 #: fdmprinter.def.json
 msgctxt "z_seam_type option back"
@@ -1326,7 +1328,7 @@ msgctxt "z_seam_x description"
 msgid ""
 "The X coordinate of the position near where to start printing each part in a "
 "layer."
-msgstr "층(Layer)의 각 부분을 인쇄 시작할 위치 근처의 X 좌표."
+msgstr "레이어의 각 부분을 인쇄 시작할 위치 근처의 X 좌표."
 
 #: fdmprinter.def.json
 msgctxt "z_seam_y label"
@@ -1338,7 +1340,7 @@ msgctxt "z_seam_y description"
 msgid ""
 "The Y coordinate of the position near where to start printing each part in a "
 "layer."
-msgstr "층(Layer)의 각 부분을 인쇄 시작할 위치 근처의 Y 좌표."
+msgstr "레이어의 각 부분을 인쇄 시작할 위치 근처의 Y 좌표."
 
 #: fdmprinter.def.json
 msgctxt "z_seam_corner label"
@@ -1445,7 +1447,7 @@ msgstr ""
 #: fdmprinter.def.json
 msgctxt "ironing_only_highest_layer label"
 msgid "Iron Only Highest Layer"
-msgstr "아이언 전용 최상단 층(Layer)"
+msgstr "아이언 전용 최상단 레이어"
 
 #: fdmprinter.def.json
 msgctxt "ironing_only_highest_layer description"
@@ -1453,8 +1455,8 @@ msgid ""
 "Only perform ironing on the very last layer of the mesh. This saves time if "
 "the lower layers don't need a smooth surface finish."
 msgstr ""
-"메쉬의 마지막 층(Layer)에서만 다림질을 수행합니다. 더 낮은 층(Layer)에서 매끄"
-"러운 표면 처리를 필요하지 않은 경우 시간을 절약할 수 있습니다."
+"메쉬의 마지막 레이어에서만 다림질을 수행합니다. 더 낮은 레이어에서 매끄러운 "
+"표면 처리를 필요하지 않은 경우 시간을 절약할 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "ironing_pattern label"
@@ -1540,7 +1542,7 @@ msgstr "다림질이 수행되는 가속도."
 #: fdmprinter.def.json
 msgctxt "jerk_ironing label"
 msgid "Ironing Jerk"
-msgstr "다림질 저크(Jerk)"
+msgstr "다림질 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_ironing description"
@@ -1607,11 +1609,11 @@ msgid ""
 "infill change with every layer to provide a more equal distribution of "
 "strength over each direction."
 msgstr ""
-"인쇄 채움 재료의 패턴. 선과 갈지자형 채움이 층(Layer)을 하나 걸러서 방향을 바"
-"꾸므로 재료비가 절감됩니다. 그리드, 삼각형, 삼육각형, 입방체, 옥텟, 4등분 입"
-"방체, 십자형, 동심원 패턴이 층(Layer)마다 완전히 인쇄됩니다. 입방체, 4등분 입"
-"방체, 옥텟 채움이 층(Layer)마다 변경되므로 각 방향으로 힘이 더 균등하게 분산"
-"됩니다."
+"인쇄 채움 재료의 패턴. 선과 갈지자형 채움이 레이어을 하나 걸러서 방향을 바꾸"
+"므로 재료비가 절감됩니다. 그리드, 삼각형, 삼육각형, 입방체, 옥텟, 4등분 입방"
+"체, 십자형, 동심원 패턴이 레이어마다 완전히 인쇄됩니다. 입방체, 4등분 입방"
+"체, 옥텟 채움이 레이어마다 변경되므로 각 방향으로 힘이 더 균등하게 분산됩니"
+"다."
 
 #: fdmprinter.def.json
 msgctxt "infill_pattern option grid"
@@ -1712,11 +1714,11 @@ msgid ""
 "which means use the traditional default angles (45 and 135 degrees for the "
 "lines and zig zag patterns and 45 degrees for all other patterns)."
 msgstr ""
-"사용할 정수선 방향 목록. 목록의 요소는 층(Layer)이 진행됨에 따라 순차적으로 "
-"사용되며 목록의 끝에 도달하면 최초부터 다시 시작됩니다. 목록 항목은 쉼표로 구"
-"분되며 전체 목록은 대괄호 안에 들어 있습니다. 기본값은 전통적인 기본 각도 "
-"(선 및 지그재그 패턴의 경우 45 및 135도, 다른 모든 패턴의 경우 45도)를 사용한"
-"다는 의미의 빈 목록."
+"사용할 정수선 방향 목록. 목록의 요소는 레이어이 진행됨에 따라 순차적으로 사용"
+"되며 목록의 끝에 도달하면 최초부터 다시 시작됩니다. 목록 항목은 쉼표로 구분되"
+"며 전체 목록은 대괄호 안에 들어 있습니다. 기본값은 전통적인 기본 각도 (선 및 "
+"지그재그 패턴의 경우 45 및 135도, 다른 모든 패턴의 경우 45도)를 사용한다는 의"
+"미의 빈 목록."
 
 #: fdmprinter.def.json
 msgctxt "infill_offset_x label"
@@ -1828,7 +1830,7 @@ msgstr ""
 #: fdmprinter.def.json
 msgctxt "infill_sparse_thickness label"
 msgid "Infill Layer Thickness"
-msgstr "채움 층(Layer) 두께"
+msgstr "채움 레이어 두께"
 
 #: fdmprinter.def.json
 msgctxt "infill_sparse_thickness description"
@@ -1836,8 +1838,8 @@ msgid ""
 "The thickness per layer of infill material. This value should always be a "
 "multiple of the layer height and is otherwise rounded."
 msgstr ""
-"채움 재료의 층(Layer)당 두께. 이 값은 항상 층(Layer) 높이의 배수여야 하며 그"
-"렇지 않으면 반올림 됩니다."
+"채움 재료의 레이어당 두께. 이 값은 항상 레이어 높이의 배수여야 하며 그렇지 않"
+"으면 반올림 됩니다."
 
 #: fdmprinter.def.json
 msgctxt "gradual_infill_steps label"
@@ -1956,8 +1958,8 @@ msgid ""
 "layers adhere better to the skin. Lower values save amount of material used."
 msgstr ""
 "스킨이 채움으로 확장되는 거리. 값이 높을수록 스킨이 채움 패턴에 더 잘 부착되"
-"고 인접 층(Layer)의 벽이 스킨에 잘 밀착됩니다. 값이 낮을수록 사용된 재료의 양"
-"이 절약됩니다."
+"고 인접 레이어의 벽이 스킨에 잘 밀착됩니다. 값이 낮을수록 사용된 재료의 양이 "
+"절약됩니다."
 
 #: fdmprinter.def.json
 msgctxt "top_skin_expand_distance label"
@@ -1973,8 +1975,8 @@ msgid ""
 "used."
 msgstr ""
 "상단 스킨이 채움으로 확장되는 거리. 값이 높을수록 스킨이 채움 패턴에 더 잘 부"
-"착되며 위 층(Layer)의 벽이 스킨에 잘 밀착됩니다. 값이 낮을수록 사용된 재료의 "
-"양이 절약됩니다."
+"착되며 위 레이어의 벽이 스킨에 잘 밀착됩니다. 값이 낮을수록 사용된 재료의 양"
+"이 절약됩니다."
 
 #: fdmprinter.def.json
 msgctxt "bottom_skin_expand_distance label"
@@ -1990,8 +1992,8 @@ msgid ""
 "used."
 msgstr ""
 "하단 스킨이 채움으로 확장되는 거리. 값이 높을수록 스킨이 채움 패턴에 더 잘붙"
-"어, 스킨이 아래 층(Layer)의 벽에 잘 밀착됩니다. 값이 낮을수록 사용된 재료의 "
-"양이 절약됩니다."
+"어, 스킨이 아래 레이어의 벽에 잘 밀착됩니다. 값이 낮을수록 사용된 재료의 양"
+"이 절약됩니다."
 
 #: fdmprinter.def.json
 msgctxt "max_skin_angle_for_expansion label"
@@ -2064,7 +2066,7 @@ msgstr "인쇄중에 사용되는 온도."
 #: fdmprinter.def.json
 msgctxt "material_print_temperature_layer_0 label"
 msgid "Printing Temperature Initial Layer"
-msgstr "최초 층(Layer) 인쇄 온도"
+msgstr "최초 레이어 인쇄 온도"
 
 #: fdmprinter.def.json
 msgctxt "material_print_temperature_layer_0 description"
@@ -2072,8 +2074,8 @@ msgid ""
 "The temperature used for printing the first layer. Set at 0 to disable "
 "special handling of the initial layer."
 msgstr ""
-"첫 번째 층(Layer) 인쇄중에 사용되는 온도. 최초 층(Layer)의 특별 처리를 비활성"
-"화 하려면 0으로 설정 합니다."
+"첫 번째 레이어 인쇄중에 사용되는 온도. 최초 레이어의 특별 처리를 비활성화 하"
+"려면 0으로 설정 합니다."
 
 #: fdmprinter.def.json
 msgctxt "material_initial_print_temperature label"
@@ -2130,12 +2132,12 @@ msgstr ""
 #: fdmprinter.def.json
 msgctxt "material_bed_temperature_layer_0 label"
 msgid "Build Plate Temperature Initial Layer"
-msgstr "최초 층(Layer) 빌드판 온도"
+msgstr "최초 레이어 빌드판 온도"
 
 #: fdmprinter.def.json
 msgctxt "material_bed_temperature_layer_0 description"
 msgid "The temperature used for the heated build plate at the first layer."
-msgstr "첫 번째 층(Layer)에서 가열된 빌드판에 사용된 온도."
+msgstr "첫 번째 레이어에서 가열된 빌드판에 사용된 온도."
 
 #: fdmprinter.def.json
 msgctxt "material_diameter label"
@@ -2197,12 +2199,12 @@ msgstr "노즐이 인쇄되지 않은 영역 위로 움직일때 필라멘트를
 #: fdmprinter.def.json
 msgctxt "retract_at_layer_change label"
 msgid "Retract at Layer Change"
-msgstr "층(Layer) 변경시 수축"
+msgstr "레이어 변경시 수축"
 
 #: fdmprinter.def.json
 msgctxt "retract_at_layer_change description"
 msgid "Retract the filament when the nozzle is moving to the next layer."
-msgstr "노즐이 다음 층(Layer)으로 이동할 때 필라멘트를 잡아 당김."
+msgstr "노즐이 다음 레이어으로 이동할 때 필라멘트를 잡아 당김."
 
 #: fdmprinter.def.json
 msgctxt "retraction_amount label"
@@ -2451,7 +2453,7 @@ msgstr "상단 표면 스킨 속도"
 #: fdmprinter.def.json
 msgctxt "speed_roofing description"
 msgid "The speed at which top surface skin layers are printed."
-msgstr "상단 표면 스킨 층(Layer)이 인쇄되는 속도."
+msgstr "상단 표면 스킨 레이어이 인쇄되는 속도."
 
 #: fdmprinter.def.json
 msgctxt "speed_topbottom label"
@@ -2461,7 +2463,7 @@ msgstr "상단 / 하단 속도"
 #: fdmprinter.def.json
 msgctxt "speed_topbottom description"
 msgid "The speed at which top/bottom layers are printed."
-msgstr "상단 / 하단 층(Layer)이 인쇄되는 속도."
+msgstr "상단 / 하단 레이어이 인쇄되는 속도."
 
 #: fdmprinter.def.json
 msgctxt "speed_support label"
@@ -2551,7 +2553,7 @@ msgstr ""
 #: fdmprinter.def.json
 msgctxt "speed_travel label"
 msgid "Travel Speed"
-msgstr "저크(Jerk) 속도"
+msgstr "저크 속도"
 
 #: fdmprinter.def.json
 msgctxt "speed_travel description"
@@ -2561,7 +2563,7 @@ msgstr "움직일때의 이동 속도."
 #: fdmprinter.def.json
 msgctxt "speed_layer_0 label"
 msgid "Initial Layer Speed"
-msgstr "최초 층(Layer) 속도"
+msgstr "최초 레이어 속도"
 
 #: fdmprinter.def.json
 msgctxt "speed_layer_0 description"
@@ -2569,13 +2571,12 @@ msgid ""
 "The speed for the initial layer. A lower value is advised to improve "
 "adhesion to the build plate."
 msgstr ""
-"최초 층(Layer)의 속도. 빌드판에 대한 접착력을 향상 시키려면 낮은 값을 권합니"
-"다."
+"최초 레이어의 속도. 빌드판에 대한 접착력을 향상 시키려면 낮은 값을 권합니다."
 
 #: fdmprinter.def.json
 msgctxt "speed_print_layer_0 label"
 msgid "Initial Layer Print Speed"
-msgstr "최초 층(Layer) 인쇄 속도"
+msgstr "최초 레이어 인쇄 속도"
 
 #: fdmprinter.def.json
 msgctxt "speed_print_layer_0 description"
@@ -2583,13 +2584,13 @@ msgid ""
 "The speed of printing for the initial layer. A lower value is advised to "
 "improve adhesion to the build plate."
 msgstr ""
-"최초 층(Layer)의 인쇄 속도. 빌드판에 대한 접착력을 향상 시키려면 낮은 값을 권"
-"합니다."
+"최초 레이어의 인쇄 속도. 빌드판에 대한 접착력을 향상 시키려면 낮은 값을 권합"
+"니다."
 
 #: fdmprinter.def.json
 msgctxt "speed_travel_layer_0 label"
 msgid "Initial Layer Travel Speed"
-msgstr "최초 층(Layer) 이동 속도"
+msgstr "최초 레이어 이동 속도"
 
 #: fdmprinter.def.json
 msgctxt "speed_travel_layer_0 description"
@@ -2599,9 +2600,9 @@ msgid ""
 "value of this setting can automatically be calculated from the ratio between "
 "the Travel Speed and the Print Speed."
 msgstr ""
-"이동 속도는 최초 층(Layer)에서 이동합니다. 이전에 인쇄 된 부분을 빌드판에서 "
-"빼내는 것을 방지하려면 더 낮은 값을 권합니다. 이 설정의 값은 이동 속도와 인"
-"쇄 속도 사이의 비율로부터 자동으로 계산 될 수 있습니다."
+"이동 속도는 최초 레이어에서 이동합니다. 이전에 인쇄 된 부분을 빌드판에서 빼내"
+"는 것을 방지하려면 더 낮은 값을 권합니다. 이 설정의 값은 이동 속도와 인쇄 속"
+"도 사이의 비율로부터 자동으로 계산 될 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "skirt_brim_speed label"
@@ -2615,8 +2616,8 @@ msgid ""
 "the initial layer speed, but sometimes you might want to print the skirt or "
 "brim at a different speed."
 msgstr ""
-"스커트와 가장자리가 인쇄되는 속도. 일반적으로 이것은 최초 층(Layer) 속도에서 "
-"수행되지만 때로는 스커트 나 가장자리를 다른 속도로 인쇄하려고 할 수 있습니다."
+"스커트와 가장자리가 인쇄되는 속도. 일반적으로 이것은 최초 레이어 속도에서 수"
+"행되지만 때로는 스커트 나 가장자리를 다른 속도로 인쇄하려고 할 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "max_feedrate_z_override label"
@@ -2635,7 +2636,7 @@ msgstr ""
 #: fdmprinter.def.json
 msgctxt "speed_slowdown_layers label"
 msgid "Number of Slower Layers"
-msgstr "느린 층(Layer) 수"
+msgstr "느린 레이어 수"
 
 #: fdmprinter.def.json
 msgctxt "speed_slowdown_layers description"
@@ -2644,9 +2645,9 @@ msgid ""
 "better adhesion to the build plate and improve the overall success rate of "
 "prints. The speed is gradually increased over these layers."
 msgstr ""
-"최초 몇 개의 층(Layer)은 모델의 나머지 부분보다 느리게 인쇄되고, 빌드판가 더 "
-"나은 접착력을 얻고 출력물의 전체 성공률을 향상시킵니다. 속도는 점차적으로 이"
-"러한 층(Layer)을 통해 증가 합니다."
+"최초 몇 개의 레이어은 모델의 나머지 부분보다 느리게 인쇄되고, 빌드판가 더 나"
+"은 접착력을 얻고 출력물의 전체 성공률을 향상시킵니다. 속도는 점차적으로 이러"
+"한 레이어을 통해 증가 합니다."
 
 #: fdmprinter.def.json
 msgctxt "speed_equalize_flow_enabled label"
@@ -2748,7 +2749,7 @@ msgstr "상단 표면 스킨 가속도"
 #: fdmprinter.def.json
 msgctxt "acceleration_roofing description"
 msgid "The acceleration with which top surface skin layers are printed."
-msgstr "상단 표면 스킨 층(Layer)이 인쇄되는 가속도."
+msgstr "상단 표면 스킨 레이어이 인쇄되는 가속도."
 
 #: fdmprinter.def.json
 msgctxt "acceleration_topbottom label"
@@ -2758,7 +2759,7 @@ msgstr "상단 / 하단 가속도"
 #: fdmprinter.def.json
 msgctxt "acceleration_topbottom description"
 msgid "The acceleration with which top/bottom layers are printed."
-msgstr "상단 / 하단 층(Layer)이 인쇄되는 가속도."
+msgstr "상단 / 하단 레이어이 인쇄되는 가속도."
 
 #: fdmprinter.def.json
 msgctxt "acceleration_support label"
@@ -2835,7 +2836,7 @@ msgstr "프라임 타워가 인쇄되는 가속도."
 #: fdmprinter.def.json
 msgctxt "acceleration_travel label"
 msgid "Travel Acceleration"
-msgstr "저크(Jerk) 가속도"
+msgstr "저크 가속도"
 
 #: fdmprinter.def.json
 msgctxt "acceleration_travel description"
@@ -2845,32 +2846,32 @@ msgstr "진행 이동이 이뤄진 가속도."
 #: fdmprinter.def.json
 msgctxt "acceleration_layer_0 label"
 msgid "Initial Layer Acceleration"
-msgstr "최초 층(Layer) 가속도"
+msgstr "최초 레이어 가속도"
 
 #: fdmprinter.def.json
 msgctxt "acceleration_layer_0 description"
 msgid "The acceleration for the initial layer."
-msgstr "최초 층(Layer)의 가속도."
+msgstr "최초 레이어의 가속도."
 
 #: fdmprinter.def.json
 msgctxt "acceleration_print_layer_0 label"
 msgid "Initial Layer Print Acceleration"
-msgstr "최초 층(Layer) 인쇄 가속도"
+msgstr "최초 레이어 인쇄 가속도"
 
 #: fdmprinter.def.json
 msgctxt "acceleration_print_layer_0 description"
 msgid "The acceleration during the printing of the initial layer."
-msgstr "최초 층(Layer) 인쇄중 가속도."
+msgstr "최초 레이어 인쇄중 가속도."
 
 #: fdmprinter.def.json
 msgctxt "acceleration_travel_layer_0 label"
 msgid "Initial Layer Travel Acceleration"
-msgstr "최초 층(Layer) 저크(Jerk) 가속도"
+msgstr "최초 레이어 저크 가속도"
 
 #: fdmprinter.def.json
 msgctxt "acceleration_travel_layer_0 description"
 msgid "The acceleration for travel moves in the initial layer."
-msgstr "최초 층(Layer)의 진행 이동 가속도."
+msgstr "최초 레이어의 진행 이동 가속도."
 
 #: fdmprinter.def.json
 msgctxt "acceleration_skirt_brim label"
@@ -2884,14 +2885,14 @@ msgid ""
 "done with the initial layer acceleration, but sometimes you might want to "
 "print the skirt or brim at a different acceleration."
 msgstr ""
-"스커트와 가장자리가 인쇄되는 가속도. 일반적으로 이것은 최초 층(Layer) 가속도"
-"으로 이루어 지지만 때로는 스커트 나 테두리를 다른 가속도으로 인쇄하려고 할 "
-"수 있습니다."
+"스커트와 가장자리가 인쇄되는 가속도. 일반적으로 이것은 최초 레이어 가속도으"
+"로 이루어 지지만 때로는 스커트 나 테두리를 다른 가속도으로 인쇄하려고 할 수 "
+"있습니다."
 
 #: fdmprinter.def.json
 msgctxt "jerk_enabled label"
 msgid "Enable Jerk Control"
-msgstr "저크(Jerk) 컨트롤 활성화"
+msgstr "저크 컨트롤 활성화"
 
 #: fdmprinter.def.json
 msgctxt "jerk_enabled description"
@@ -2901,12 +2902,12 @@ msgid ""
 "print quality."
 msgstr ""
 "X 또는 Y 축의 속도가 변경 될 때 프린터 헤드의 속도를 조정할 수 있습니다. 저크"
-"(Jerk)를 높이면 인쇄 품질을 저하시키면서 인쇄 시간을 줄일 수 있습니다."
+"를 높이면 인쇄 품질을 저하시키면서 인쇄 시간을 줄일 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "jerk_print label"
 msgid "Print Jerk"
-msgstr "저크(Jerk) 인쇄"
+msgstr "저크 인쇄"
 
 #: fdmprinter.def.json
 msgctxt "jerk_print description"
@@ -2916,7 +2917,7 @@ msgstr "프린터 헤드의 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_infill label"
 msgid "Infill Jerk"
-msgstr "저크(Jerk) 채움"
+msgstr "저크 채움"
 
 #: fdmprinter.def.json
 msgctxt "jerk_infill description"
@@ -2926,7 +2927,7 @@ msgstr "채움이 인쇄되는 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_wall label"
 msgid "Wall Jerk"
-msgstr "벽면 저크(Jerk)"
+msgstr "벽면 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_wall description"
@@ -2937,7 +2938,7 @@ msgstr "벽이 인쇄되는 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_wall_0 label"
 msgid "Outer Wall Jerk"
-msgstr "외벽 저크(Jerk)"
+msgstr "외벽 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_wall_0 description"
@@ -2949,7 +2950,7 @@ msgstr "가장 외쪽 벽이 인쇄되는 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_wall_x label"
 msgid "Inner Wall Jerk"
-msgstr "내벽 저크(Jerk)"
+msgstr "내벽 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_wall_x description"
@@ -2961,31 +2962,31 @@ msgstr "모든 내벽이 인쇄되는 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_roofing label"
 msgid "Top Surface Skin Jerk"
-msgstr "상단 표면 스킨 저크(Jerk)"
+msgstr "상단 표면 스킨 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_roofing description"
 msgid ""
 "The maximum instantaneous velocity change with which top surface skin layers "
 "are printed."
-msgstr "상단 표면 스킨 층(Layer)이 인쇄되는 최대 순간 속도 변화."
+msgstr "상단 표면 스킨 레이어이 인쇄되는 최대 순간 속도 변화."
 
 #: fdmprinter.def.json
 msgctxt "jerk_topbottom label"
 msgid "Top/Bottom Jerk"
-msgstr "상단 / 하단 저크(Jerk)"
+msgstr "상단 / 하단 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_topbottom description"
 msgid ""
 "The maximum instantaneous velocity change with which top/bottom layers are "
 "printed."
-msgstr "상단 / 하단 층(Layer)이 인쇄되는 최대 순간 속도 변화."
+msgstr "상단 / 하단 레이어이 인쇄되는 최대 순간 속도 변화."
 
 #: fdmprinter.def.json
 msgctxt "jerk_support label"
 msgid "Support Jerk"
-msgstr "지지대 저크(Jerk)"
+msgstr "지지대 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_support description"
@@ -2997,7 +2998,7 @@ msgstr "지지대 구조가 인쇄되는 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_support_infill label"
 msgid "Support Infill Jerk"
-msgstr "지지대 채움 저크(Jerk)"
+msgstr "지지대 채움 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_support_infill description"
@@ -3009,7 +3010,7 @@ msgstr "지지대가 채워지는 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_support_interface label"
 msgid "Support Interface Jerk"
-msgstr "지지대 인터페이스 저크(Jerk)"
+msgstr "지지대 인터페이스 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_support_interface description"
@@ -3021,7 +3022,7 @@ msgstr "지지대의 지붕과 하단이 인쇄되는 최대 순간 속도 변�
 #: fdmprinter.def.json
 msgctxt "jerk_support_roof label"
 msgid "Support Roof Jerk"
-msgstr "지지대 위 저크(Jerk)"
+msgstr "지지대 위 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_support_roof description"
@@ -3033,7 +3034,7 @@ msgstr "지지대의 지붕이 인쇄되는 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_support_bottom label"
 msgid "Support Floor Jerk"
-msgstr "지지대 하단 저크(Jerk)"
+msgstr "지지대 하단 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_support_bottom description"
@@ -3045,7 +3046,7 @@ msgstr "지지대의 하단이 인쇄되는 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_prime_tower label"
 msgid "Prime Tower Jerk"
-msgstr "프라임 타워 저크(Jerk)"
+msgstr "프라임 타워 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_prime_tower description"
@@ -3057,7 +3058,7 @@ msgstr "프라임 타워가 인쇄되는 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_travel label"
 msgid "Travel Jerk"
-msgstr "저크(Jerk) 저크(Jerk)"
+msgstr "저크 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_travel description"
@@ -3068,39 +3069,39 @@ msgstr "이동이 이동하는 최대 순간 속도 변화."
 #: fdmprinter.def.json
 msgctxt "jerk_layer_0 label"
 msgid "Initial Layer Jerk"
-msgstr "최초 층(Layer) 저크(Jerk)"
+msgstr "최초 레이어 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_layer_0 description"
 msgid "The print maximum instantaneous velocity change for the initial layer."
-msgstr "최초 층(Layer)의 인쇄 최대 순간 속도 변화."
+msgstr "최초 레이어의 인쇄 최대 순간 속도 변화."
 
 #: fdmprinter.def.json
 msgctxt "jerk_print_layer_0 label"
 msgid "Initial Layer Print Jerk"
-msgstr "최초 층(Layer) 인쇄 저크(Jerk)"
+msgstr "최초 레이어 인쇄 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_print_layer_0 description"
 msgid ""
 "The maximum instantaneous velocity change during the printing of the initial "
 "layer."
-msgstr "최초 층(Layer)의 인쇄 중 최대 순간 속도 변화."
+msgstr "최초 레이어의 인쇄 중 최대 순간 속도 변화."
 
 #: fdmprinter.def.json
 msgctxt "jerk_travel_layer_0 label"
 msgid "Initial Layer Travel Jerk"
-msgstr "최초 층(Layer) 저크(Jerk) 저크(Jerk)"
+msgstr "최초 레이어 저크 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_travel_layer_0 description"
 msgid "The acceleration for travel moves in the initial layer."
-msgstr "이동 가속도는 최초 층(Layer)에서 이동합니다."
+msgstr "이동 가속도는 최초 레이어에서 이동합니다."
 
 #: fdmprinter.def.json
 msgctxt "jerk_skirt_brim label"
 msgid "Skirt/Brim Jerk"
-msgstr "스커트 / 브림 저크(Jerk)"
+msgstr "스커트 / 브림 저크"
 
 #: fdmprinter.def.json
 msgctxt "jerk_skirt_brim description"
@@ -3193,7 +3194,7 @@ msgstr "진행 이동중 피할때 노즐과 이미 인쇄된 부분 사이의 �
 #: fdmprinter.def.json
 msgctxt "start_layers_at_same_position label"
 msgid "Start Layers with the Same Part"
-msgstr "같은 부분으로 층(Layer) 시작"
+msgstr "같은 부분으로 레이어 시작"
 
 #: fdmprinter.def.json
 msgctxt "start_layers_at_same_position description"
@@ -3203,33 +3204,33 @@ msgid ""
 "ended with. This makes for better overhangs and small parts, but increases "
 "printing time."
 msgstr ""
-"각 층(Layer)에서 같은 지점 근처에 객체를 인쇄하는 것으로 시작하여 이전 층"
-"(Layer)이 끝난 부분을 인쇄하여 새 층(Layer)을 시작하지 마십시오. 이것은 오버"
-"행 및 작은 부분을 개선하지만 인쇄 시간이 늘어납니다."
+"각 레이어에서 같은 지점 근처에 객체를 인쇄하는 것으로 시작하여 이전 레이어이 "
+"끝난 부분을 인쇄하여 새 레이어을 시작하지 마십시오. 이것은 오버행 및 작은 부"
+"분을 개선하지만 인쇄 시간이 늘어납니다."
 
 #: fdmprinter.def.json
 msgctxt "layer_start_x label"
 msgid "Layer Start X"
-msgstr "층(Layer) 시작 X"
+msgstr "레이어 시작 X"
 
 #: fdmprinter.def.json
 msgctxt "layer_start_x description"
 msgid ""
 "The X coordinate of the position near where to find the part to start "
 "printing each layer."
-msgstr "각 층(Layer)의 인쇄를 시작할 부분을 찾을 위치 근처의 X 좌표."
+msgstr "각 레이어의 인쇄를 시작할 부분을 찾을 위치 근처의 X 좌표."
 
 #: fdmprinter.def.json
 msgctxt "layer_start_y label"
 msgid "Layer Start Y"
-msgstr "층(Layer) 시작 Y"
+msgstr "레이어 시작 Y"
 
 #: fdmprinter.def.json
 msgctxt "layer_start_y description"
 msgid ""
 "The Y coordinate of the position near where to find the part to start "
 "printing each layer."
-msgstr "각 층(Layer) 인쇄를 시작할 부분을 찾을 위치 근처의 위치에 대한 Y 좌표."
+msgstr "각 레이어 인쇄를 시작할 부분을 찾을 위치 근처의 위치에 대한 Y 좌표."
 
 #: fdmprinter.def.json
 msgctxt "retraction_hop_enabled label"
@@ -3309,8 +3310,8 @@ msgid ""
 "Enables the print cooling fans while printing. The fans improve print "
 "quality on layers with short layer times and bridging / overhangs."
 msgstr ""
-"인쇄 중에 출력 냉각팬을 활성화합니다. 팬은 짧은 층(Layer) 시간 및 브리징 / 오"
-"버행로 층(Layer)의 인쇄 품질을 향상시킵니다."
+"인쇄 중에 출력 냉각팬을 활성화합니다. 팬은 짧은 레이어 시간 및 브리징 / 오버"
+"행로 레이어의 인쇄 품질을 향상시킵니다."
 
 #: fdmprinter.def.json
 msgctxt "cool_fan_speed label"
@@ -3334,8 +3335,8 @@ msgid ""
 "prints faster than the threshold, the fan speed gradually inclines towards "
 "the maximum fan speed."
 msgstr ""
-"팬이 한계 값에 도달하기 전에 회전하는 속도. 층(Layer)이 한계 값보다 빠르게 인"
-"쇄되면 팬 속도가 최대 팬 속도쪽으로 점차 기울어집니다."
+"팬이 한계 값에 도달하기 전에 회전하는 속도. 레이어이 한계 값보다 빠르게 인쇄"
+"되면 팬 속도가 최대 팬 속도쪽으로 점차 기울어집니다."
 
 #: fdmprinter.def.json
 msgctxt "cool_fan_speed_max label"
@@ -3349,8 +3350,8 @@ msgid ""
 "gradually increases between the regular fan speed and maximum fan speed when "
 "the threshold is hit."
 msgstr ""
-"최소 층(Layer) 시간에 팬이 회전하는 속도. 한계 값에 도달하면 일반 팬 속도와 "
-"최대 팬 속도 사이에서 팬 속도가 서서히 증가합니다."
+"최소 레이어 시간에 팬이 회전하는 속도. 한계 값에 도달하면 일반 팬 속도와 최"
+"대 팬 속도 사이에서 팬 속도가 서서히 증가합니다."
 
 #: fdmprinter.def.json
 msgctxt "cool_min_layer_time_fan_speed_max label"
@@ -3365,9 +3366,9 @@ msgid ""
 "speed. For faster layers the fan speed gradually increases towards the "
 "maximum fan speed."
 msgstr ""
-"일반 팬 속도와 최대 팬 속도 사이의 한계 값을 설정하는 층(Layer) 시간. 이 시간"
-"보다 느리게 인쇄되는 층(Layer)은 일반 팬 속도를 사용합니다. 빠른 층(Layer)의 "
-"경우 팬 속도가 최대 팬 속도쪽으로 점차 증가합니다."
+"일반 팬 속도와 최대 팬 속도 사이의 한계 값을 설정하는 레이어 시간. 이 시간보"
+"다 느리게 인쇄되는 레이어은 일반 팬 속도를 사용합니다. 빠른 레이어의 경우 팬 "
+"속도가 최대 팬 속도쪽으로 점차 증가합니다."
 
 #: fdmprinter.def.json
 msgctxt "cool_fan_speed_0 label"
@@ -3381,8 +3382,8 @@ msgid ""
 "layers the fan speed is gradually increased up to the layer corresponding to "
 "Regular Fan Speed at Height."
 msgstr ""
-"인쇄 시작시 팬이 회전하는 속도. 후속 층(Layer)에서는 팬 속도가 높이의 일반 "
-"팬 속도에 해당하는 층(Layer)까지 점차 증가합니다."
+"인쇄 시작시 팬이 회전하는 속도. 후속 레이어에서는 팬 속도가 높이의 일반 팬 속"
+"도에 해당하는 레이어까지 점차 증가합니다."
 
 #: fdmprinter.def.json
 msgctxt "cool_fan_full_at_height label"
@@ -3396,13 +3397,13 @@ msgid ""
 "the fan speed gradually increases from Initial Fan Speed to Regular Fan "
 "Speed."
 msgstr ""
-"일반 팬 속도로 팬이 회전하는 높이. 아래의 층(Layer)에서 팬 속도는 최초 팬 속"
-"도에서 일반 팬 속도로 점차 증가합니다."
+"일반 팬 속도로 팬이 회전하는 높이. 아래의 레이어에서 팬 속도는 최초 팬 속도에"
+"서 일반 팬 속도로 점차 증가합니다."
 
 #: fdmprinter.def.json
 msgctxt "cool_fan_full_layer label"
 msgid "Regular Fan Speed at Layer"
-msgstr "일반 팬 속도 층(Layer)"
+msgstr "일반 팬 속도 레이어"
 
 #: fdmprinter.def.json
 msgctxt "cool_fan_full_layer description"
@@ -3410,13 +3411,13 @@ msgid ""
 "The layer at which the fans spin on regular fan speed. If regular fan speed "
 "at height is set, this value is calculated and rounded to a whole number."
 msgstr ""
-"팬이 일반 팬 속도로 회전하는 층(Layer). 높이의 일반 팬 속도를 설정하면이 값"
-"이 계산되고 정수로 반올림됩니다."
+"팬이 일반 팬 속도로 회전하는 레이어. 높이의 일반 팬 속도를 설정하면이 값이 계"
+"산되고 정수로 반올림됩니다."
 
 #: fdmprinter.def.json
 msgctxt "cool_min_layer_time label"
 msgid "Minimum Layer Time"
-msgstr "최소 층(Layer) 시간"
+msgstr "최소 레이어 시간"
 
 #: fdmprinter.def.json
 msgctxt "cool_min_layer_time description"
@@ -3427,10 +3428,10 @@ msgid ""
 "still take shorter than the minimal layer time if Lift Head is disabled and "
 "if the Minimum Speed would otherwise be violated."
 msgstr ""
-"층(Layer)에 소요된 최소 시간. 이렇게하면 인쇄가 느려지고 적어도 한 번에 여기"
-"에 설정된 시간을 소비하게됩니다. 이렇게하면 다음 층(Layer)을 인쇄하기 전에 출"
-"력물을 적절히 냉각시킬 수 있습니다. 헤드 들어올림이 비활성화되고 최소 속도가 "
-"위반되는 경우 층(Layer)이 최소 층(Layer) 시간보다 짧게 걸릴 수 있습니다."
+"레이어에 소요된 최소 시간. 이렇게하면 인쇄가 느려지고 적어도 한 번에 여기에 "
+"설정된 시간을 소비하게됩니다. 이렇게하면 다음 레이어을 인쇄하기 전에 출력물"
+"을 적절히 냉각시킬 수 있습니다. 헤드 들어올림이 비활성화되고 최소 속도가 위반"
+"되는 경우 레이어이 최소 레이어 시간보다 짧게 걸릴 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "cool_min_speed label"
@@ -3444,8 +3445,8 @@ msgid ""
 "When the printer would slow down too much, the pressure in the nozzle would "
 "be too low and result in bad print quality."
 msgstr ""
-"최소 층(Layer) 시간으로 인해 속도가 느려지 긴하지만 최소 인쇄 속도. 인쇄의 속"
-"도가 너무 느려지면 노즐의 압력이 너무 낮아 인쇄 품질이 나빠질 수 있습니다."
+"최소 레이어 시간으로 인해 속도가 느려지 긴하지만 최소 인쇄 속도. 인쇄의 속도"
+"가 너무 느려지면 노즐의 압력이 너무 낮아 인쇄 품질이 나빠질 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "cool_lift_head label"
@@ -3459,8 +3460,8 @@ msgid ""
 "away from the print and wait the extra time until the minimum layer time is "
 "reached."
 msgstr ""
-"최소한의 층(Layer) 시간으로 인해 최소 속도에 도달하면 헤드를 출력물에서 들어 "
-"올려 최소 층(Layer) 시간에 도달 할 때까지 추가의 시간을 기다리십시오."
+"최소한의 레이어 시간으로 인해 최소 속도에 도달하면 헤드를 출력물에서 들어 올"
+"려 최소 레이어 시간에 도달 할 때까지 추가의 시간을 기다리십시오."
 
 #: fdmprinter.def.json
 msgctxt "support label"
@@ -3515,7 +3516,7 @@ msgstr ""
 #: fdmprinter.def.json
 msgctxt "support_extruder_nr_layer_0 label"
 msgid "First Layer Support Extruder"
-msgstr "첫 번째 층(Layer) 지지대 압출기"
+msgstr "첫 번째 레이어 지지대 압출기"
 
 #: fdmprinter.def.json
 msgctxt "support_extruder_nr_layer_0 description"
@@ -3523,8 +3524,8 @@ msgid ""
 "The extruder train to use for printing the first layer of support infill. "
 "This is used in multi-extrusion."
 msgstr ""
-"제 1 층(Layer)의 지지대 채움 용 인쇄에 사용되는 압출기 트레인. 이것은 다중 압"
-"출에 사용됩니다."
+"제 1 레이어의 지지대 채움 용 인쇄에 사용되는 압출기 트레인. 이것은 다중 압출"
+"에 사용됩니다."
 
 #: fdmprinter.def.json
 msgctxt "support_interface_extruder_nr label"
@@ -3708,7 +3709,7 @@ msgid ""
 "value is rounded up to a multiple of the layer height."
 msgstr ""
 "지지대 구조의 위 / 아래에서 인쇄까지의 거리. 이 틈새는 모델 인쇄 후 지지대를 "
-"제거하기위한 공간을 제공합니다. 이 값은 층(Layer) 높이의 배수로 반올림됩니다."
+"제거하기위한 공간을 제공합니다. 이 값은 레이어 높이의 배수로 반올림됩니다."
 
 #: fdmprinter.def.json
 msgctxt "support_top_distance label"
@@ -3838,13 +3839,13 @@ msgid ""
 "Amount of offset applied to all support polygons in each layer. Positive "
 "values can smooth out the support areas and result in more sturdy support."
 msgstr ""
-"각 층(Layer)의 모든 지지대 다각형에 적용된 오프셋의 크기. 양수 값을 사용하면 "
-"지지대 영역이 원활 해지며보다 견고한 지지대을받을 수 있습니다."
+"각 레이어의 모든 지지대 다각형에 적용된 오프셋의 크기. 양수 값을 사용하면 지"
+"지대 영역이 원활 해지며보다 견고한 지지대을받을 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "support_infill_sparse_thickness label"
 msgid "Support Infill Layer Thickness"
-msgstr "지지대 채움 층(Layer) 두께"
+msgstr "지지대 채움 레이어 두께"
 
 #: fdmprinter.def.json
 msgctxt "support_infill_sparse_thickness description"
@@ -3852,8 +3853,7 @@ msgid ""
 "The thickness per layer of support infill material. This value should always "
 "be a multiple of the layer height and is otherwise rounded."
 msgstr ""
-"채움 층(Layer)의 두께. 이 값은 항상 층(Layer) 높이의 배수 여야하며 반올림됩니"
-"다."
+"채움 레이어의 두께. 이 값은 항상 레이어 높이의 배수 여야하며 반올림됩니다."
 
 #: fdmprinter.def.json
 msgctxt "gradual_support_infill_steps label"
@@ -3948,7 +3948,7 @@ msgid ""
 "The thickness of the support roofs. This controls the amount of dense layers "
 "at the top of the support on which the model rests."
 msgstr ""
-"지지대 지붕 두께. 모델이 놓이는 갠트리 상단의 조밀 한 층(Layer)의 양을 제어."
+"지지대 지붕 두께. 모델이 놓이는 갠트리 상단의 조밀 한 레이어의 양을 제어."
 
 #: fdmprinter.def.json
 msgctxt "support_bottom_height label"
@@ -3961,8 +3961,8 @@ msgid ""
 "The thickness of the support floors. This controls the number of dense "
 "layers that are printed on top of places of a model on which support rests."
 msgstr ""
-"지지대 하단 두께. 지지대가 놓여있는 모델의 상단에 인쇄되는 조밀한 층(Layer)"
-"의 수를 제어."
+"지지대 하단 두께. 지지대가 놓여있는 모델의 상단에 인쇄되는 조밀한 레이어의 수"
+"를 제어."
 
 #: fdmprinter.def.json
 msgctxt "support_interface_skip_height label"
@@ -4370,7 +4370,7 @@ msgid ""
 "This is the minimum distance. Multiple skirt lines will extend outwards from "
 "this distance."
 msgstr ""
-"인쇄의 스커트와 첫 번째 층(Layer) 사이의 수직 거리. \n"
+"인쇄의 스커트와 첫 번째 레이어 사이의 수직 거리. \n"
 "이는 최소 거리. 여러 개의 스커트 선이 이 거리에서 바깥쪽으로 연장됩니다."
 
 #: fdmprinter.def.json
@@ -4479,14 +4479,14 @@ msgid ""
 "the first layer is raised by this amount to lower the bonding between the "
 "raft layer and the model. Makes it easier to peel off the raft."
 msgstr ""
-"최종 래프트 층(Layer)와 모델의 첫 번째 층(Layer) 사이의 틈새. 래프트 층"
-"(Layer)과 모델 사이의 결합을 낮추기 위해 이 크기만큼 첫 번째 층(Layer)만 올립"
-"니다. 래프트를 쉽게 떼어 낼 수 있습니다."
+"최종 래프트 레이어와 모델의 첫 번째 레이어 사이의 틈새. 래프트 레이어과 모델 "
+"사이의 결합을 낮추기 위해 이 크기만큼 첫 번째 레이어만 올립니다. 래프트를 쉽"
+"게 떼어 낼 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "layer_0_z_overlap label"
 msgid "Initial Layer Z Overlap"
-msgstr "최초 층(Layer) Z 겹침"
+msgstr "최초 레이어 Z 겹침"
 
 #: fdmprinter.def.json
 msgctxt "layer_0_z_overlap description"
@@ -4496,13 +4496,13 @@ msgid ""
 "model layer will be shifted down by this amount."
 msgstr ""
 "틈새 간격에서 손실된 필라멘트를 보정하기 위해 Z 방향으로 모델의 첫번째와 두번"
-"째 층(Layer)이 중첩되도록 합니다. 첫번째 모델 층(Layer) 위의 모든 모델은 이 "
-"크기만큼 아래로 이동합니다."
+"째 레이어이 중첩되도록 합니다. 첫번째 모델 레이어 위의 모든 모델은 이 크기만"
+"큼 아래로 이동합니다."
 
 #: fdmprinter.def.json
 msgctxt "raft_surface_layers label"
 msgid "Raft Top Layers"
-msgstr "래프트 상단 층(Layer)"
+msgstr "래프트 상단 레이어"
 
 #: fdmprinter.def.json
 msgctxt "raft_surface_layers description"
@@ -4511,19 +4511,18 @@ msgid ""
 "filled layers that the model sits on. 2 layers result in a smoother top "
 "surface than 1."
 msgstr ""
-"두 번째 래프트 층(Layer) 위에 있는 최상단 층(Layer)의 수. 이것은 모델 위에 완"
-"전히 채워진 층(Layer)입니다. 2개의 층(Layer)은 1개보다 부드러운 표면을 만듭니"
-"다."
+"두 번째 래프트 레이어 위에 있는 최상단 레이어의 수. 이것은 모델 위에 완전히 "
+"채워진 레이어입니다. 2개의 레이어은 1개보다 부드러운 표면을 만듭니다."
 
 #: fdmprinter.def.json
 msgctxt "raft_surface_thickness label"
 msgid "Raft Top Layer Thickness"
-msgstr "래프트 상단 층(Layer) 두께"
+msgstr "래프트 상단 레이어 두께"
 
 #: fdmprinter.def.json
 msgctxt "raft_surface_thickness description"
 msgid "Layer thickness of the top raft layers."
-msgstr "상단 래프트 층(Layer)의 층(Layer) 두께."
+msgstr "상단 래프트 레이어의 레이어 두께."
 
 #: fdmprinter.def.json
 msgctxt "raft_surface_line_width label"
@@ -4550,8 +4549,8 @@ msgid ""
 "The distance between the raft lines for the top raft layers. The spacing "
 "should be equal to the line width, so that the surface is solid."
 msgstr ""
-"상단 래프트 층(Layer)에 대한 래프트 선 사이의 거리. 간격은 표면이 단단하도록 "
-"선 두께과 같아야 한다."
+"상단 래프트 레이어에 대한 래프트 선 사이의 거리. 간격은 표면이 단단하도록 선 "
+"두께과 같아야 한다."
 
 #: fdmprinter.def.json
 msgctxt "raft_interface_thickness label"
@@ -4561,7 +4560,7 @@ msgstr "래프트 중간 두께"
 #: fdmprinter.def.json
 msgctxt "raft_interface_thickness description"
 msgid "Layer thickness of the middle raft layer."
-msgstr "중간 래프트 층(Layer)의 층(Layer) 두께."
+msgstr "중간 래프트 레이어의 레이어 두께."
 
 #: fdmprinter.def.json
 msgctxt "raft_interface_line_width label"
@@ -4574,8 +4573,8 @@ msgid ""
 "Width of the lines in the middle raft layer. Making the second layer extrude "
 "more causes the lines to stick to the build plate."
 msgstr ""
-"중간 래프트 층(Layer)의 선두께. 두 번째 층(Layer)을 더 오버행 시키면 선이 빌"
-"드판에 달라 붙습니다."
+"중간 래프트 레이어의 선두께. 두 번째 레이어을 더 오버행 시키면 선이 빌드판에 "
+"달라 붙습니다."
 
 #: fdmprinter.def.json
 msgctxt "raft_interface_line_spacing label"
@@ -4589,8 +4588,8 @@ msgid ""
 "of the middle should be quite wide, while being dense enough to support the "
 "top raft layers."
 msgstr ""
-"중간 래프트 층(Layer)에 대한 래프트 사이의 간격. 중간 틈새는 매우 넓어야하며 "
-"래프트 상부 층(Layer)을지지 할만큼 충분히 촘촘해야합니다."
+"중간 래프트 레이어에 대한 래프트 사이의 간격. 중간 틈새는 매우 넓어야하며 래"
+"프트 상부 레이어을지지 할만큼 충분히 촘촘해야합니다."
 
 #: fdmprinter.def.json
 msgctxt "raft_base_thickness label"
@@ -4603,8 +4602,8 @@ msgid ""
 "Layer thickness of the base raft layer. This should be a thick layer which "
 "sticks firmly to the printer build plate."
 msgstr ""
-"기본 래프트 층(Layer)의 층(Layer) 두께. 이것은 인쇄 빌드판에 단단히 붙어있는 "
-"두꺼운 층(Layer)이어야합니다."
+"기본 래프트 레이어의 레이어 두께. 이것은 인쇄 빌드판에 단단히 붙어있는 두꺼"
+"운 레이어이어야합니다."
 
 #: fdmprinter.def.json
 msgctxt "raft_base_line_width label"
@@ -4617,8 +4616,8 @@ msgid ""
 "Width of the lines in the base raft layer. These should be thick lines to "
 "assist in build plate adhesion."
 msgstr ""
-"기본 래프트 층(Layer)에 있는 선의 두께. 이것은 빌드판 접착을 돕기 위해 두꺼"
-"운 선이어야합니다."
+"기본 래프트 레이어에 있는 선의 두께. 이것은 빌드판 접착을 돕기 위해 두꺼운 선"
+"이어야합니다."
 
 #: fdmprinter.def.json
 msgctxt "raft_base_line_spacing label"
@@ -4631,8 +4630,8 @@ msgid ""
 "The distance between the raft lines for the base raft layer. Wide spacing "
 "makes for easy removal of the raft from the build plate."
 msgstr ""
-"기본 래프트 층(Layer)에 대한 래프트 사이의 간격. 넓은 간격으로 빌드판에서 래"
-"프트를 쉽게 제거 할 수 있습니다."
+"기본 래프트 레이어에 대한 래프트 사이의 간격. 넓은 간격으로 빌드판에서 래프트"
+"를 쉽게 제거 할 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "raft_speed label"
@@ -4656,8 +4655,8 @@ msgid ""
 "a bit slower, so that the nozzle can slowly smooth out adjacent surface "
 "lines."
 msgstr ""
-"상단 래프트 층(Layer)이 인쇄되는 속도. 이 노즐은 조금 더 느리게 인쇄해야 노즐"
-"이 인접한 표면 선을 천천히 부드럽게 할 수 있습니다."
+"상단 래프트 레이어이 인쇄되는 속도. 이 노즐은 조금 더 느리게 인쇄해야 노즐이 "
+"인접한 표면 선을 천천히 부드럽게 할 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "raft_interface_speed label"
@@ -4671,8 +4670,8 @@ msgid ""
 "quite slowly, as the volume of material coming out of the nozzle is quite "
 "high."
 msgstr ""
-"중간 래프트 층(Layer)이 인쇄되는 속도. 이것은 노즐에서 나오는 재료의 양이 상"
-"당히 많기 때문에 아주 천천히 인쇄되어야합니다."
+"중간 래프트 레이어이 인쇄되는 속도. 이것은 노즐에서 나오는 재료의 양이 상당"
+"히 많기 때문에 아주 천천히 인쇄되어야합니다."
 
 #: fdmprinter.def.json
 msgctxt "raft_base_speed label"
@@ -4686,8 +4685,8 @@ msgid ""
 "quite slowly, as the volume of material coming out of the nozzle is quite "
 "high."
 msgstr ""
-"기본 래프트 층(Layer)이 인쇄되는 속도. 이것은 노즐에서 나오는 재료의 양이 상"
-"당히 많기 때문에 아주 천천히 인쇄되어야합니다."
+"기본 래프트 레이어이 인쇄되는 속도. 이것은 노즐에서 나오는 재료의 양이 상당"
+"히 많기 때문에 아주 천천히 인쇄되어야합니다."
 
 #: fdmprinter.def.json
 msgctxt "raft_acceleration label"
@@ -4707,7 +4706,7 @@ msgstr "래프트 상단 인쇄 가속도"
 #: fdmprinter.def.json
 msgctxt "raft_surface_acceleration description"
 msgid "The acceleration with which the top raft layers are printed."
-msgstr "상단 래프트 층(Layer)이 인쇄되는 가속도."
+msgstr "상단 래프트 레이어이 인쇄되는 가속도."
 
 #: fdmprinter.def.json
 msgctxt "raft_interface_acceleration label"
@@ -4717,7 +4716,7 @@ msgstr "래프트 중간 인쇄 가속도"
 #: fdmprinter.def.json
 msgctxt "raft_interface_acceleration description"
 msgid "The acceleration with which the middle raft layer is printed."
-msgstr "중간 래프트 층(Layer)이 인쇄되는 가속도."
+msgstr "중간 래프트 레이어이 인쇄되는 가속도."
 
 #: fdmprinter.def.json
 msgctxt "raft_base_acceleration label"
@@ -4727,47 +4726,47 @@ msgstr "래프트 기본 인쇄 가속도"
 #: fdmprinter.def.json
 msgctxt "raft_base_acceleration description"
 msgid "The acceleration with which the base raft layer is printed."
-msgstr "기본 래프트 층(Layer)이 인쇄되는 가속도."
+msgstr "기본 래프트 레이어이 인쇄되는 가속도."
 
 #: fdmprinter.def.json
 msgctxt "raft_jerk label"
 msgid "Raft Print Jerk"
-msgstr "래프트 인쇄 저크(Jerk)"
+msgstr "래프트 인쇄 저크"
 
 #: fdmprinter.def.json
 msgctxt "raft_jerk description"
 msgid "The jerk with which the raft is printed."
-msgstr "래프트와 함께 인쇄되는 저크(Jerk)."
+msgstr "래프트와 함께 인쇄되는 저크."
 
 #: fdmprinter.def.json
 msgctxt "raft_surface_jerk label"
 msgid "Raft Top Print Jerk"
-msgstr "래프트 상단 인쇄 저크(Jerk)"
+msgstr "래프트 상단 인쇄 저크"
 
 #: fdmprinter.def.json
 msgctxt "raft_surface_jerk description"
 msgid "The jerk with which the top raft layers are printed."
-msgstr "상단 래프트 층(Layer)이 인쇄되는 저크(Jerk)."
+msgstr "상단 래프트 레이어이 인쇄되는 저크."
 
 #: fdmprinter.def.json
 msgctxt "raft_interface_jerk label"
 msgid "Raft Middle Print Jerk"
-msgstr "래프트 중간 인쇄 저크(Jerk)"
+msgstr "래프트 중간 인쇄 저크"
 
 #: fdmprinter.def.json
 msgctxt "raft_interface_jerk description"
 msgid "The jerk with which the middle raft layer is printed."
-msgstr "중간 래프트 층(Layer)이 인쇄되는 저크(Jerk)."
+msgstr "중간 래프트 레이어이 인쇄되는 저크."
 
 #: fdmprinter.def.json
 msgctxt "raft_base_jerk label"
 msgid "Raft Base Print Jerk"
-msgstr "래프트 기본 인쇄 저크(Jerk)"
+msgstr "래프트 기본 인쇄 저크"
 
 #: fdmprinter.def.json
 msgctxt "raft_base_jerk description"
 msgid "The jerk with which the base raft layer is printed."
-msgstr "기본 래프트 층(Layer)이 인쇄되는 저크(Jerk)."
+msgstr "기본 래프트 레이어이 인쇄되는 저크."
 
 #: fdmprinter.def.json
 msgctxt "raft_fan_speed label"
@@ -4787,7 +4786,7 @@ msgstr "래프트 상단 팬 속도"
 #: fdmprinter.def.json
 msgctxt "raft_surface_fan_speed description"
 msgid "The fan speed for the top raft layers."
-msgstr "상단 래프트 층(Layer)의 팬 속도."
+msgstr "상단 래프트 레이어의 팬 속도."
 
 #: fdmprinter.def.json
 msgctxt "raft_interface_fan_speed label"
@@ -4797,7 +4796,7 @@ msgstr "래프트 중간 팬 속도"
 #: fdmprinter.def.json
 msgctxt "raft_interface_fan_speed description"
 msgid "The fan speed for the middle raft layer."
-msgstr "중간 래프트 층(Layer)의 팬 속도."
+msgstr "중간 래프트 레이어의 팬 속도."
 
 #: fdmprinter.def.json
 msgctxt "raft_base_fan_speed label"
@@ -4807,7 +4806,7 @@ msgstr "래프트 기본 팬 속도"
 #: fdmprinter.def.json
 msgctxt "raft_base_fan_speed description"
 msgid "The fan speed for the base raft layer."
-msgstr "기본 래프트 층(Layer)의 팬 속도."
+msgstr "기본 래프트 레이어의 팬 속도."
 
 #: fdmprinter.def.json
 msgctxt "dual label"
@@ -4852,7 +4851,7 @@ msgid ""
 "The minimum volume for each layer of the prime tower in order to purge "
 "enough material."
 msgstr ""
-"충분히 재료를 깨끗이 하기 위한 프라임 타워의 각 층(Layer)에 대한 최소 볼륨."
+"충분히 재료를 깨끗이 하기 위한 프라임 타워의 각 레이어에 대한 최소 볼륨."
 
 #: fdmprinter.def.json
 msgctxt "prime_tower_wall_thickness label"
@@ -5022,9 +5021,9 @@ msgid ""
 "ignore any invisible internal geometry. However, it also ignores layer holes "
 "which can be viewed from above or below."
 msgstr ""
-"각 층(Layer)의 구멍을 제거하고 외모양만 유지합니다. 이것은 보이지않는 내부 지"
-"오메트리를 무시합니다. 그러나 위 또는 아래에서 볼 수있는 층(Layer) 구멍도 무"
-"시합니다."
+"각 레이어의 구멍을 제거하고 외모양만 유지합니다. 이것은 보이지않는 내부 지오"
+"메트리를 무시합니다. 그러나 위 또는 아래에서 볼 수있는 레이어 구멍도 무시합니"
+"다."
 
 #: fdmprinter.def.json
 msgctxt "meshfix_extensive_stitching label"
@@ -5054,10 +5053,10 @@ msgid ""
 "be stitched. This option should be used as a last resort option when "
 "everything else fails to produce proper GCode."
 msgstr ""
-"일반적으로 Cura(Cura)는 메쉬의 작은 구멍을 수선하고 큰 구멍이있는 층(Layer)"
-"의 부분을 제거하려고 합니다. 이 옵션을 활성화하면 봉합될 수 없는 그러한 부분"
-"들이 유지됩니다. 이 옵션은 다른 모든 것이 적절한 GCode를 생성하지 못할 때 최"
-"후의 수단으로 사용해야합니다."
+"일반적으로 Cura(Cura)는 메쉬의 작은 구멍을 수선하고 큰 구멍이있는 레이어의 부"
+"분을 제거하려고 합니다. 이 옵션을 활성화하면 봉합될 수 없는 그러한 부분들이 "
+"유지됩니다. 이 옵션은 다른 모든 것이 적절한 GCode를 생성하지 못할 때 최후의 "
+"수단으로 사용해야합니다."
 
 #: fdmprinter.def.json
 msgctxt "multiple_mesh_overlap label"
@@ -5099,14 +5098,14 @@ msgid ""
 "cause one of the meshes to obtain all of the volume in the overlap, while it "
 "is removed from the other meshes."
 msgstr ""
-"메쉬 교차하는 볼륨으로 전환하면 모든 층(Layer)에 속하게 되고, 겹쳐진 메쉬가 "
-"맞물리게 됩니다. 이 설정을 해제하면 메쉬 중 하나가 겹침의 모든 볼륨을 가져오"
-"고, 다른 메쉬에서는 제거됩니다."
+"메쉬 교차하는 볼륨으로 전환하면 모든 레이어에 속하게 되고, 겹쳐진 메쉬가 맞물"
+"리게 됩니다. 이 설정을 해제하면 메쉬 중 하나가 겹침의 모든 볼륨을 가져오고, "
+"다른 메쉬에서는 제거됩니다."
 
 #: fdmprinter.def.json
 msgctxt "remove_empty_first_layers label"
 msgid "Remove Empty First Layers"
-msgstr "빈 첫 번째 층(Layer) 제거"
+msgstr "빈 첫 번째 레이어 제거"
 
 #: fdmprinter.def.json
 msgctxt "remove_empty_first_layers description"
@@ -5115,9 +5114,9 @@ msgid ""
 "Disabling this setting can cause empty first layers if the Slicing Tolerance "
 "setting is set to Exclusive or Middle."
 msgstr ""
-"첫 번째 인쇄된 층(Layer)이 있는 경우 빈 층(Layer)을 제거합니다. 슬라이싱 공"
-"차 설정이 '전문적' 또는 '중간'으로 설정된 경우 이 설정을 사용하지 않으면 첫번"
-"째 층(Layer)이 비어있을 수 있습니다."
+"첫 번째 인쇄된 레이어이 있는 경우 빈 레이어을 제거합니다. 슬라이싱 공차 설정"
+"이 '전문적' 또는 '중간'으로 설정된 경우 이 설정을 사용하지 않으면 첫번째 레이"
+"어이 비어있을 수 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "blackmagic label"
@@ -5143,10 +5142,10 @@ msgid ""
 "between and all models are lower than the distance between the nozzle and "
 "the X/Y axes."
 msgstr ""
-"한 번에 한 층(Layer) 씩 모든 모델을 인쇄할지 또는 한 모델이 완료 될 때까지 기"
-"다린 후에 다음 모델로 넘어갈지 여부. 한 번에 한 가지 모드는 모든 모델이 분리"
-"되어 전체 프린터 헤드가 중간에서 움직일 수 있고 모든 모델이 노즐과 X/Y 축 사"
-"이의 거리보다 낮은 경우에만 가능합니다."
+"한 번에 한 레이어 씩 모든 모델을 인쇄할지 또는 한 모델이 완료 될 때까지 기다"
+"린 후에 다음 모델로 넘어갈지 여부. 한 번에 한 가지 모드는 모든 모델이 분리되"
+"어 전체 프린터 헤드가 중간에서 움직일 수 있고 모든 모델이 노즐과 X/Y 축 사이"
+"의 거리보다 낮은 경우에만 가능합니다."
 
 #: fdmprinter.def.json
 msgctxt "print_sequence option all_at_once"
@@ -5332,8 +5331,8 @@ msgid ""
 msgstr ""
 "나선형으로 하면 외쪽 가장자리의 Z 이동을 부드럽게 합니다. 이렇게 하면 출력물 "
 "전체에 걸쳐 꾸준히 Z가 증가합니다. 이 기능은 솔리드 모델을 단단한 하단이있는 "
-"하나의 벽으로 인쇄합니다. 이 기능은 각 층(Layer)에 하나의 부분 만 포함되어있"
-"을 때만 활성화 해야 합니다."
+"하나의 벽으로 인쇄합니다. 이 기능은 각 레이어에 하나의 부분 만 포함되어있을 "
+"때만 활성화 해야 합니다."
 
 #: fdmprinter.def.json
 msgctxt "smooth_spiralized_contours label"
@@ -5348,8 +5347,8 @@ msgid ""
 "layer view). Note that smoothing will tend to blur fine surface details."
 msgstr ""
 "Z 이음선의 눈에 보이는 부분을 줄이려면 나선형 윤곽선을 매끄럽게 하세요 (Z-이"
-"음선은 출력물에서는 거의 보이지 않지만 층(Layer) 보기에서는 여전히 보임). 다"
-"듬기는 표면의 세부 묘사를 흐릿하게하는 경향이 있습니다."
+"음선은 출력물에서는 거의 보이지 않지만 레이어 보기에서는 여전히 보임). 다듬기"
+"는 표면의 세부 묘사를 흐릿하게하는 경향이 있습니다."
 
 #: fdmprinter.def.json
 msgctxt "relative_extrusion label"
@@ -5516,12 +5515,12 @@ msgid ""
 "retains the most details, Inclusive makes for the best fit and Middle takes "
 "the least time to process."
 msgstr ""
-"비스틈한 면이 있는 층(Layer)을 슬라이스하는 방법. 층(Layer)의 중간부분이 표면"
-"(중간)과 교차하는 위치에 따라 층(Layer)의 영역을 생성할 수 있습니다. 아니면 "
-"각 층(Layer)은 층(Layer)의 높이 전체에 걸쳐 볼륨 영역에 속하는 영역(전용)을 "
-"가질 수 있거나, 층(Layer)에는 층(Layer) 내의 모든 부분에 속하는 영역(포괄)이 "
-"있습니다. '전용'은 가장 세부적인 사항을 포함하고, '포괄'은 최상의 적합을 만들"
-"어주고, '중간'은 처리하는데 최소한의 시간이 걸립니다."
+"비스틈한 면이 있는 레이어을 슬라이스하는 방법. 레이어의 중간부분이 표면(중간)"
+"과 교차하는 위치에 따라 레이어의 영역을 생성할 수 있습니다. 아니면 각 레이어"
+"은 레이어의 높이 전체에 걸쳐 볼륨 영역에 속하는 영역(전용)을 가질 수 있거나, "
+"레이어에는 레이어 내의 모든 부분에 속하는 영역(포괄)이 있습니다. '전용'은 가"
+"장 세부적인 사항을 포함하고, '포괄'은 최상의 적합을 만들어주고, '중간'은 처리"
+"하는데 최소한의 시간이 걸립니다."
 
 #: fdmprinter.def.json
 msgctxt "slicing_tolerance option middle"
@@ -5556,7 +5555,7 @@ msgstr "상단 표면 스킨 패턴"
 #: fdmprinter.def.json
 msgctxt "roofing_pattern description"
 msgid "The pattern of the top most layers."
-msgstr "최상단 층(Layer)의 패턴."
+msgstr "최상단 레이어의 패턴."
 
 #: fdmprinter.def.json
 msgctxt "roofing_pattern option lines"
@@ -5588,11 +5587,11 @@ msgid ""
 "the whole list is contained in square brackets. Default is an empty list "
 "which means use the traditional default angles (45 and 135 degrees)."
 msgstr ""
-"상단 표면 스킨 층(Layer)이 선 또는 지그재그 패턴을 사용할 때 사용할 정수선 방"
-"향 목록. 목록의 요소는 층(Layer)이 진행됨에 따라 순차적으로 사용되며 목록의 "
-"끝에 도달하면 최초부터 다시 시작됩니다. 목록 항목은 쉼표로 구분되며 전체 목록"
-"은 대괄호로 묶여 있습니다. 기본값은 전통적인 기본 각도 (45도 및 135도)를 사용"
-"하는 빈 목록."
+"상단 표면 스킨 레이어이 선 또는 지그재그 패턴을 사용할 때 사용할 정수선 방향 "
+"목록. 목록의 요소는 레이어이 진행됨에 따라 순차적으로 사용되며 목록의 끝에 도"
+"달하면 최초부터 다시 시작됩니다. 목록 항목은 쉼표로 구분되며 전체 목록은 대괄"
+"호로 묶여 있습니다. 기본값은 전통적인 기본 각도 (45도 및 135도)를 사용하는 "
+"빈 목록."
 
 #: fdmprinter.def.json
 msgctxt "infill_enable_travel_optimization label"
@@ -5622,8 +5621,7 @@ msgctxt "material_flow_dependent_temperature description"
 msgid ""
 "Change the temperature for each layer automatically with the average flow "
 "speed of that layer."
-msgstr ""
-"해당 층(Layer)의 평균 압출량으로 각 층(Layer)의 온도를 자동으로 변경합니다."
+msgstr "해당 레이어의 평균 압출량으로 각 레이어의 온도를 자동으로 변경합니다."
 
 #: fdmprinter.def.json
 msgctxt "material_flow_temp_graph label"
@@ -5861,8 +5859,8 @@ msgid ""
 "they are printed diagonally only. This setting adds the X-only and Y-only "
 "directions."
 msgstr ""
-"위쪽 / 아래쪽 층(Layer)이 인쇄되는 방향을 바꿉니다.. 보통 대각선으로만 인쇄됩"
-"니다. 이 설정은 X 전용 및 Y 전용 방향을 추가합니다."
+"위쪽 / 아래쪽 레이어이 인쇄되는 방향을 바꿉니다.. 보통 대각선으로만 인쇄됩니"
+"다. 이 설정은 X 전용 및 Y 전용 방향을 추가합니다."
 
 #: fdmprinter.def.json
 msgctxt "cross_infill_pocket_size label"
@@ -5934,7 +5932,7 @@ msgid ""
 "causes more angled parts in your model to be filled on each layer."
 msgstr ""
 "최대 각도 w.r.t. 나중에 스파게티가 채워질 영역에 대한 인쇄 내부의 Z 축. 이 값"
-"을 낮추면 모델의 각진 부분이 각 층(Layer)에 채워집니다."
+"을 낮추면 모델의 각진 부분이 각 레이어에 채워집니다."
 
 #: fdmprinter.def.json
 msgctxt "spaghetti_max_height label"
@@ -6080,8 +6078,8 @@ msgid ""
 "that the original points of the polygon are discarded, so a low density "
 "results in a reduction of the resolution."
 msgstr ""
-"층(Layer)의 각 다각형에 도입된 점의 평균 밀도. 다각형의 원래 점은 삭제되므로 "
-"밀도가 낮으면 해상도가 감소합니다."
+"레이어의 각 다각형에 도입된 점의 평균 밀도. 다각형의 원래 점은 삭제되므로 밀"
+"도가 낮으면 해상도가 감소합니다."
 
 #: fdmprinter.def.json
 msgctxt "magic_fuzzy_skin_point_dist label"
@@ -6188,8 +6186,8 @@ msgid ""
 "Speed of printing the first layer, which is the only layer touching the "
 "build platform. Only applies to Wire Printing."
 msgstr ""
-"빌드 플랫폼을 만지는 유일한 층(Layer) 인 첫 번째 층(Layer) 인쇄 속도. 와이어 "
-"인쇄에만 적용됩니다."
+"빌드 플랫폼을 만지는 유일한 레이어 인 첫 번째 레이어 인쇄 속도. 와이어 인쇄에"
+"만 적용됩니다."
 
 #: fdmprinter.def.json
 msgctxt "wireframe_printspeed_up label"
@@ -6297,8 +6295,8 @@ msgid ""
 "long delays cause sagging. Only applies to Wire Printing."
 msgstr ""
 "두 개의 수평 세그먼트 사이의 지연 시간. 이러한 지연을 도입하면 연결 지점에서 "
-"이전 층(Layer)와의 접착력이 향상 될 수 있으며 너무 긴 지연으로 인해 처짐이 발"
-"생할 수 있습니다. 와이어 인쇄에만 적용됩니다."
+"이전 레이어와의 접착력이 향상 될 수 있으며 너무 긴 지연으로 인해 처짐이 발생"
+"할 수 있습니다. 와이어 인쇄에만 적용됩니다."
 
 #: fdmprinter.def.json
 msgctxt "wireframe_up_half_speed label"
@@ -6312,9 +6310,9 @@ msgid ""
 "This can cause better adhesion to previous layers, while not heating the "
 "material in those layers too much. Only applies to Wire Printing."
 msgstr ""
-"기본 속도의 반으로 오버행된 상향 이동 거리. 이로 인해 이전 층(Layer)에 더 나"
-"은 접착력을 유발할 수 있지만 층(Layer)에 있는 재료는 너무 많이 가열하지 않습"
-"니다. 와이어 인쇄에 만 적용됩니다."
+"기본 속도의 반으로 오버행된 상향 이동 거리. 이로 인해 이전 레이어에 더 나은 "
+"접착력을 유발할 수 있지만 레이어에 있는 재료는 너무 많이 가열하지 않습니다. "
+"와이어 인쇄에 만 적용됩니다."
 
 #: fdmprinter.def.json
 msgctxt "wireframe_top_jump label"
@@ -6328,8 +6326,8 @@ msgid ""
 "horizontal layer has a better chance to connect to it. Only applies to Wire "
 "Printing."
 msgstr ""
-"상향 선의 상단에 작은 매듭을 만들어 연속적인 수평 층(Layer)에 연결할 수있는 "
-"기회를 얻습니다. 와이어 인쇄에만 적용됩니다."
+"상향 선의 상단에 작은 매듭을 만들어 연속적인 수평 레이어에 연결할 수있는 기회"
+"를 얻습니다. 와이어 인쇄에만 적용됩니다."
 
 #: fdmprinter.def.json
 msgctxt "wireframe_fall_down label"
@@ -6376,8 +6374,8 @@ msgid ""
 "compensate for the sagging of the top of an upward line; however, the lines "
 "won't always fall down as predicted."
 msgstr ""
-"각 연결 지점에서 두 개의 연속된 층(Layer)이 연결되도록 하는 전략. 필라멘트 후"
-"퇴하면 상향 선이 올바른 위치에서 경화되지만 필라멘트 연삭이 발생할 수 있습니"
+"각 연결 지점에서 두 개의 연속된 레이어이 연결되도록 하는 전략. 필라멘트 후퇴"
+"하면 상향 선이 올바른 위치에서 경화되지만 필라멘트 연삭이 발생할 수 있습니"
 "다. 상향 선의 끝에 매듭을 만들어 연결 기회를 높이고 선을 차게 할 수 있습니"
 "다. 그러나 느린 인쇄 속도가 필요할 수 있습니다. 또 다른 전략은 상향 선의 윗부"
 "분의 처짐을 보충하는 것. 그러나 선은 항상 예측대로 떨어지지는 않습니다."
@@ -6470,47 +6468,47 @@ msgid ""
 "applies to Wire Printing."
 msgstr ""
 "노즐과 수평 하향 선 사이의 거리. 클리어런스가 클수록 비스듬한 각도에서 비스듬"
-"히 하단으로 선이 그어져 다음 층(Layer)과의 연결이보다 적어집니다. 와이어 인쇄"
-"에만 적용됩니다."
+"히 하단으로 선이 그어져 다음 레이어과의 연결이보다 적어집니다. 와이어 인쇄에"
+"만 적용됩니다."
 
 #: fdmprinter.def.json
 msgctxt "adaptive_layer_height_enabled label"
 msgid "Use adaptive layers"
-msgstr "가변 층(Layer) 사용"
+msgstr "가변 레이어 사용"
 
 #: fdmprinter.def.json
 msgctxt "adaptive_layer_height_enabled description"
 msgid ""
 "Adaptive layers computes the layer heights depending on the shape of the "
 "model."
-msgstr "가변 층(Layer)는 모델의 모양에 따라 층(Layer)의 높이를 계산합니다."
+msgstr "가변 레이어는 모델의 모양에 따라 레이어의 높이를 계산합니다."
 
 #: fdmprinter.def.json
 msgctxt "adaptive_layer_height_variation label"
 msgid "Adaptive layers maximum variation"
-msgstr "가변 층(Layer) 최대 변화"
+msgstr "가변 레이어 최대 변화"
 
 #: fdmprinter.def.json
 msgctxt "adaptive_layer_height_variation description"
 msgid "The maximum allowed height different from the base layer height in mm."
-msgstr "기본 층(Layer) 높이와 다른 최대 허용 높이 (mm)."
+msgstr "기본 레이어 높이와 다른 최대 허용 높이 (mm)."
 
 #: fdmprinter.def.json
 msgctxt "adaptive_layer_height_variation_step label"
 msgid "Adaptive layers variation step size"
-msgstr "가변 층(Layer) 변화 단계 크기"
+msgstr "가변 레이어 변화 단계 크기"
 
 #: fdmprinter.def.json
 msgctxt "adaptive_layer_height_variation_step description"
 msgid ""
 "The difference in height of the next layer height compared to the previous "
 "one."
-msgstr "이전 높이와 비교되는 다음 층(Layer) 높이의 차이."
+msgstr "이전 높이와 비교되는 다음 레이어 높이의 차이."
 
 #: fdmprinter.def.json
 msgctxt "adaptive_layer_height_threshold label"
 msgid "Adaptive layers threshold"
-msgstr "가변 층(Layer) 임계 값"
+msgstr "가변 레이어 임계 값"
 
 #: fdmprinter.def.json
 msgctxt "adaptive_layer_height_threshold description"
@@ -6518,8 +6516,8 @@ msgid ""
 "Threshold whether to use a smaller layer or not. This number is compared to "
 "the tan of the steepest slope in a layer."
 msgstr ""
-"더 작은 층(Layer)을 사용할지 여부에 대한 임계 값. 이 숫자는 층(Layer)의 가장 "
-"급한 경사의 탄젠트와 비교됩니다."
+"더 작은 레이어을 사용할지 여부에 대한 임계 값. 이 숫자는 레이어의 가장 급한 "
+"경사의 탄젠트와 비교됩니다."
 
 #: fdmprinter.def.json
 msgctxt "command_line_settings label"
